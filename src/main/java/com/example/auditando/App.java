@@ -12,13 +12,13 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage){
-        VBox root = new VBox(10);
-        Scene scene = new Scene(root, 300, 300);
-        Button button = new Button("Teste Butão do Dias");
-        Label label = new Label("Testudo Label");
-        TextArea textArea = new TextArea("Sudo textArea");
-        root.getChildren().addAll(label, textArea, button);
-        stage.setScene(scene);
-        stage.show();
+        VBox root = new VBox(10); //Cria layout com 10px de spacing
+        Scene scene = new Scene(root, 300, 300); //Cria a cena com o layout dentro
+        Button button = new Button("Teste Butão do Dias"); //Cria um botão (o do Dias)
+        Label label = new Label("Testudo Label"); //Cria uma Label
+        TextArea textArea = new TextArea("Sudo textArea"); //Cria uma TextArea
+        root.getChildren().addAll(label, textArea, button); //Adiciona os "campos" no layout
+        stage.setScene(scene); //seta a Scene atual
+        stage.show(); //Mostra a scene
     }
 }
